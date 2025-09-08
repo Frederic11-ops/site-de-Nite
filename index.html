@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site de Nit</title>
+    <link rel="stylesheet" href="bootstrap-5.3.7-dist/css/bootstrap.min.css">
+    <style>
+        body {
+          background-image: url('images/fond.jpg');
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center center;
+        }
+        .bandeau-nit {
+          background-color: #8B7B6A;
+          color: #fff;
+          padding: 32px 0 24px 0;
+          text-align: center;
+          font-family: 'Playfair Display', serif;
+          font-size: 2.5rem;
+          letter-spacing: 2px;
+          box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        .section-taupe {
+          background-color: #8B7B6A !important;
+          color: #fff !important;
+        }
+          .footer-taupe {
+    background-color: #8B7B6A;
+    color: #fff;
+    text-align: center;
+    padding: 16px 0;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;}
+
+      #scrollTopBtn {
+    position: fixed;
+    left: 24px;
+    bottom: 24px;
+    z-index: 9999;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  }
+  #scrollTopBtn svg:hover {
+    background: #a08c7a;
+  }
+    </style>
+</head>
+
+<body>
+
+      <div class="bandeau-nit">
+          Le site de Nit
+      </div>
+
+
+    <div class="container mt-5">
+      <div class="row"><!---->
+
+
+
+        <div class="col-12 col-md-6 mb-4">
+            <!-- Première partie : Affichage de la photo -->
+            <section class="h-100 p-3 border rounded bg-light d-flex justify-content-center align-items-center  section-taupe" style="min-height: 300px;">
+              <img src="images/0.jpg" alt="Photo de Nit" class="img-fluid rounded shadow">
+            </section>
+        </div>
+
+        <div class="col-12 col-md-6 mb-4">
+            <!-- Deuxième partie -->  
+            <section class="h-100 p-3 border rounded bg-light  section-taupe">
+                <div id="presentation"></div>
+            </section>
+        </div>
+
+        <div class="">
+          <!--liste des mots">-->
+            <section class="h-100 p-3 h-100 p-3 border rounded section-taupe">
+            <div class="accordion  section-taupe  " id="accordionExample">
+              <div id="contenu"></div>
+            </div>
+          </section>
+        </div>
+
+      </div><!--<div class="row">-->
+    </div><!--<div class="container mt-5">-->
+
+
+   <!-- ...existing code... -->
+<a href="#" id="scrollTopBtn" title="Remonter" style="display:none;">
+  <svg width="40" height="40" viewBox="0 0 24 24" fill="#fff" style="background:#8B7B6A;border-radius:50%;padding:6px;">
+    <path d="M12 4l-8 8h6v8h4v-8h6z"/>
+  </svg>
+</a>
+<script>
+  // Affiche le bouton quand on descend
+  window.addEventListener('scroll', function() {
+    document.getElementById('scrollTopBtn').style.display = window.scrollY > 100 ? 'block' : 'none';
+  });
+  // Remonte en haut au clic
+  document.getElementById('scrollTopBtn').onclick = function(e) {
+    e.preventDefault();
+    window.scrollTo({top:0, behavior:'smooth'});
+  };
+</script>
+<style>
+  #scrollTopBtn {
+    position: fixed;
+    left: 24px;
+    bottom: 24px;
+    z-index: 9999;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  }
+  #scrollTopBtn svg:hover {
+    background: #a08c7a;
+  }
+</style>
+<!-- ...existing code... -->
+
+    <script src="bootstrap-5.3.7-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+
+</body>
+
+<footer class="footer-taupe mt-5">
+  <div id="maj"></div>
+  Dernière mise à jour : 29 août 2025
+</footer>
+
+
+</html>
