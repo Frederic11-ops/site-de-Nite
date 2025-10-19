@@ -28,10 +28,34 @@ function afficher(){
                 var tableauDeDonneesRow = tableauDeDonnees.find(item => item[0] === noms[i]);
                 element.innerHTML +='<div class="accordion-item    section-taupe  "><h2 class="accordion-header">';
                 element.innerHTML +='<button class="accordion-button collapsed   section-taupe" type="button" data-bs-toggle="collapse" data-bs-target="#'+tableauDeDonneesRow[0]+'" aria-expanded="false" aria-controls="'+tableauDeDonneesRow[0]+'">'+tableauDeDonneesRow[0]+'</button>';
-                element.innerHTML +='</h2><div id="'+tableauDeDonneesRow[0]+'" class="accordion-collapse collapse" data-bs-parent="#accordionExample"><div class="accordion-body row"><img src="images/'+tableauDeDonneesRow[1]+'" alt="'+tableauDeDonneesRow[0]+'" class="img-fluid rounded shadow col-12 col-md-6 mb-4"><div class="col-12 col-md-6 mb-4"><h5>'+tableauDeDonneesRow[2]+'</h5><p>'+tableauDeDonneesRow[3]+'</p></div></div></div></div>';
+                element.innerHTML +='</h2><div id="'+tableauDeDonneesRow[0]+'" class="accordion-collapse collapse" data-bs-parent="#accordionExample"><div class="accordion-body row"><img src="images/'+tableauDeDonneesRow[1]+'" alt="'+tableauDeDonneesRow[0]+'" class=" rounded shadow col-12 col-md-6 mb-4"><div class="col-12 col-md-6 mb-4"><h5>'+tableauDeDonneesRow[2]+'</h5><p>'+tableauDeDonneesRow[3]+'</p></div></div></div></div>';
         }
 }
 
+
+function afficherIde(){
+        // Sélectionnez l'élément où vous souhaitez ajouter le contenu
+        var element = document.getElementById("contenuIde");
+    
+        // Ajoutez du contenu HTML à l'élément
+        var tableauDeDonneesIde = [
+        //['Apprendre le Catalan avec Nit', '0.jpg', 'Voici Nit, la plus belle chienne d\'Osseja qui va vous apprendre quelques mots de Catalan.'],
+        ['1.jpg'],
+        ['2.jpg'],
+        ['3.jpg'],
+        ['4.jpg'],
+        ['5.jpg'],
+        ['6.jpg'],
+        ['7.jpg'],
+        ['8.jpg']
+        ];
+
+        element.innerHTML ="";
+
+        for (var i = 1; i < tableauDeDonneesIde.length; i++) {
+                element.innerHTML +='<div class="carousel-item"><img src="images/ide/'+tableauDeDonneesIde[i]+'" class="d-block w-100 rounded shadow  img-max-screen" alt="Photo 2'+tableauDeDonneesIde[i]+'"></div>';
+        }
+}
 
 function afficherPresentation(){
         // Sélectionnez l'élément où vous souhaitez ajouter le contenu
@@ -61,7 +85,7 @@ function afficherMiseAJour(){
 }
 document.addEventListener("DOMContentLoaded",afficherPresentation());
 document.addEventListener("DOMContentLoaded",afficher());
-
+document.addEventListener("DOMContentLoaded",afficherIde());
 document.addEventListener("DOMContentLoaded",afficherMiseAJour());
 
 

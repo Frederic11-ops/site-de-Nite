@@ -5,49 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site de Nit</title>
     <link rel="stylesheet" href="bootstrap-5.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
     <style>
-        body {
-          background-image: url('images/fond.jpg');
-          background-size: cover;
-          background-repeat: no-repeat;
-          background-position: center center;
-        }
-        .bandeau-nit {
-          background-color: #8B7B6A;
-          color: #fff;
-          padding: 32px 0 24px 0;
-          text-align: center;
-          font-family: 'Playfair Display', serif;
-          font-size: 2.5rem;
-          letter-spacing: 2px;
-          box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-        }
-        .section-taupe {
-          background-color: #8B7B6A !important;
-          color: #fff !important;
-        }
-          .footer-taupe {
-    background-color: #8B7B6A;
-    color: #fff;
-    text-align: center;
-    padding: 16px 0;
-    font-family: 'Playfair Display', serif;
-    font-size: 1.1rem;
-    position: relative;
-    bottom: 0;
-    width: 100%;}
-
-      #scrollTopBtn {
-    position: fixed;
-    left: 24px;
-    bottom: 24px;
-    z-index: 9999;
-    cursor: pointer;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-  }
-  #scrollTopBtn svg:hover {
-    background: #a08c7a;
-  }
+       
     </style>
 </head>
 
@@ -77,15 +37,47 @@
             </section>
         </div>
 
-        <div class="">
+        
+        <div class="col-12 mb-4">
           <!--liste des mots">-->
-            <section class="h-100 p-3 h-100 p-3 border rounded section-taupe">
-            <div class="accordion  section-taupe  " id="accordionExample">
+            <section class="h-100 p-3 h-100 p-3 border rounded   bg-light section-taupe">
+            <div class="accordion  " id="accordionExample">
               <div id="contenu"></div>
             </div>
           </section>
         </div>
 
+        <div class="col-12 mb-4">
+          <!--liste des mots">-->
+            <section class="h-100 p-3 h-100 p-3 border rounded   bg-light section-taupe">
+              <div class="center"><h2 >Idefix, le plus gentil cousin.</h2></div>
+              
+                <img src="images/ide/0.jpg" alt="Photo de Ide" class="img-fluid rounded shadow  img-max-screen">
+                <div class="center">
+                  <p>Ide nous a quitter, c'était le plus gentil patapouf de Carnon, il a été le plus gentil cousin de Nit. Cette dernière a souhaité lui rendre hommage à travers cette galerie de photos.</p>
+                </div>
+                
+
+                <!-- À placer dans la div id="contenuIde" -->
+                <div id="carouselIde" class="carousel slide mb-3" data-bs-ride="carousel">
+                      <div class="carousel-inner">
+                          <div class="carousel-item active">
+                              <img src="images/ide/1.jpg" class="d-block w-100 rounded shadow  img-max-screen" alt="Photo 1">
+                          </div>
+                      <div id="contenuIde"></div>
+                      </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselIde" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon"></span>
+                  <span class="visually-hidden">Précédent</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselIde" data-bs-slide="next">
+                  <span class="carousel-control-next-icon"></span>
+                  <span class="visually-hidden">Suivant</span>
+                  </button>
+                </div>
+          </section>
+        </div>
+       
       </div><!--<div class="row">-->
     </div><!--<div class="container mt-5">-->
 
@@ -108,17 +100,7 @@
   };
 </script>
 <style>
-  #scrollTopBtn {
-    position: fixed;
-    left: 24px;
-    bottom: 24px;
-    z-index: 9999;
-    cursor: pointer;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-  }
-  #scrollTopBtn svg:hover {
-    background: #a08c7a;
-  }
+
 </style>
 <!-- ...existing code... -->
 
@@ -129,7 +111,7 @@
 
 <footer class="footer-taupe mt-5">
   <div id="maj"></div>
-  Dernière mise à jour : 29 août 2025
+  Dernière mise à jour : 19 octobre 2025
 </footer>
 
 

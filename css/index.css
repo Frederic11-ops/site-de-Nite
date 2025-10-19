@@ -1,0 +1,81 @@
+ body {
+    background-image: url('../images/fond.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+        }
+
+.bandeau-nit {
+    background-color: #8B7B6A;
+    color: #fff;
+    padding: 32px 0 24px 0;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+
+.section-taupe {
+          background-color: #8B7B6A !important;
+          color: #fff !important;
+        }
+
+.footer-taupe {
+    background-color: #8B7B6A;
+    color: #fff;
+    text-align: center;
+    padding: 16px 0;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;}
+
+      #scrollTopBtn {
+    position: fixed;
+    left: 24px;
+    bottom: 24px;
+    z-index: 9999;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  }
+  #scrollTopBtn svg:hover {
+    background: #a08c7a;
+  }
+
+  img {
+  width: 100%;
+  height: auto;
+  object-fit: contain; /* ou cover selon le besoin */
+  display: block;
+}
+
+.img-max-screen {
+  max-height: 60vh; /* 80% de la hauteur de l'écran */
+  width: auto;
+  object-fit: contain;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.center
+{
+
+  text-align: center;
+  margin-top: 1em;margin-bottom: 1em;
+}
+
+  #scrollTopBtn {
+    position: fixed;
+    left: 24px;
+    bottom: 24px;
+    z-index: 9999;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  }
+  #scrollTopBtn svg:hover {
+    background: #a08c7a;
+  }
